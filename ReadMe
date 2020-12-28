@@ -1,0 +1,20 @@
+注意事项：
+1.  需要将config.php文件置于 /var/www/html/ 目录下
+    如果该目录不存在， 应新建相关文件
+
+2.  系统需要安装apache2, sudo apt install apache2
+
+3.  修改apache2关于php的配置文件，
+    将php.ini.bak文件复制到 /etc/php/7.2/apache2/ 目录下
+    替换原有php.ini文件（将该php.ini.bak更名为php.ini）
+
+4.  系统需要安装和配置 php-common php-mysql php-mbstring php-zip php-xml
+
+5.  系统数据库使用Mysql, 请在 config.php 文件中进行配置
+
+6.  系统运行前需要保证对目录下的 ./data/ 目录具有666以上权限
+    如果需要用phpmyadmin:
+    1). 需要对 ./phpmyadmin/tmp/ 目录赋予读写权限
+    2). 如果 ./phpmyadmin/ 目录下无 ./tmp/ 目录, 请创建
+    3). 至少保证程序对 ./tmp 目录可读可写(666以上权限)
+    4). 赋予文件路径权限时必须添加-R对其子目录也赋予权限

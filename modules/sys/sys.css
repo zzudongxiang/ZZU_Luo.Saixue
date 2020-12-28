@@ -1,0 +1,37 @@
+.sys-body-style {
+    margin: auto;
+    width: 1200px;
+    background: #EEEEEE;
+}
+
+.sys-nav {
+    width: 200px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    background-color: #2b4c91;
+}
+
+.sys-nav::-webkit-scrollbar {
+    width: 0;
+}
+
+.sys-nav-item-title {
+    font-size: 16px;
+    color: #1E9FFF;
+}
+
+.sys-console-body
+{
+    background-color: #2b4c91;
+}
+
+.sys-panel {
+    width: 960px;
+    border: none;
+    min-height: 600px;
+    margin: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    padding: 20px
+}
